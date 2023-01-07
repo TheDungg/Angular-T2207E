@@ -2,31 +2,25 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import {StudentComponent} from "./student/student.component";
-import {ClassComponent} from "./classroom/class.component";
 import {FormsModule} from "@angular/forms";
-import {HomeComponent} from "./pages/home/home.component";
-import {LoginComponent} from "./pages/login.component/login.component";
 import {RouterModule, Routes} from "@angular/router";
-import {ThedungComponent} from "./pages/thedung/thedung.component";
-import {ContactUsComponent} from "./pages/contactUs/contactUs.component";
-import {AboutUsComponent} from "./pages/aboutUs/aboutUs.component";
-import {FoodComponent} from "./food/food.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {Page1Component} from "./page1/page1.component";
+import {Page2Component} from "./page2/page2.component";
+import {Page3Component} from "./page3/page3.component";
 
 // khai bao cac pages trong website
 const appRoutes: Routes = [
-  {path:'',component: HomeComponent},
-  {path:'login', component: LoginComponent},
-  {path:'thedung', component: ThedungComponent},
-  {path:'contactUs', component: ContactUsComponent},
-  {path:'aboutUs', component: AboutUsComponent},
-  {path: 'food', component: FoodComponent}
-
+  {path: 'page1', component: Page1Component},
+  {path: '', component: Page2Component},
+  {path: '', component: Page3Component}
 ]
 @NgModule({
   declarations: [
-    AppComponent, StudentComponent, ClassComponent, HomeComponent, LoginComponent, ThedungComponent, FoodComponent
+    AppComponent, Page1Component, Page2Component, Page3Component
+
+
+
   ],
   imports: [
     BrowserModule, FormsModule, RouterModule.forRoot(appRoutes),

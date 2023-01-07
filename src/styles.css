@@ -51,4 +51,6 @@ img{
 .footer li i:hover{
   color: #ff253a;
 }
-
+.nav-item{
+  margin-left: 5px;
+}

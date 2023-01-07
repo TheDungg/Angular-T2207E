@@ -1,30 +1,76 @@
-<header class="section header">
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</header>
-<!-- -->
-<nav class="section navigation">
-  <div class="container">
-    <ul class="nav">
-      <li class="nav-item"><a routerLink="/">Home</a></li>
-      <li class="nav-item"><a routerLink="/login">Login</a></li>
-      <li class="nav-item"><a routerLink="/thedung">thedung</a></li>
-      <li class="nav-item"><a routerLink="/contactUs">Contact Us</a></li>
-      <li class="nav-item"><a routerLink="/aboutUs">About Us</a></li>
-      <li class="nav-item"><a routerLink="/food">Food</a></li>
-
-    </ul>
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="#"><i class="fa fa-caret-down"></i> Favorites</a>
+  <div class="dich">
+    <a href="#"> Inbox</a>
+    <a routerLink="/page1"> Sent Items</a>
   </div>
-</nav>
-
-<section class="section main">
-  <div class="container">
-    <router-outlet></router-outlet>
+  <a href="#"><i class="fa fa-caret-down"></i> John</a>
+  <div class="dich">
+    <a href="#"> Inbox</a>
+    <a href="#"> Drafts</a>
+    <a href="#"> Deleted Items</a>
+    <a href="#"> Sent Items</a>
+    <a href="#"> Outbox</a>
   </div>
-</section>
 
-<footer class="section footer">
-  <div class="container">
+</div>
+<div class="main">
+  <div class="line">
+    <div class="line1">
+      <a><i class="fa fa-user"></i></a>
+      <div class="text1">
+        Gemma Roberson <br>
+        Apology for late response email <br>
+        Hello Colette Wooten,
+      </div>
+    </div>
 
+    <br>
+
+    <div class="line1">
+      <a><i class="fa fa-user"></i></a>
+      <div class="text1">
+        Ann Garza <br>
+        Application for Job Title <br>
+        Hello Kerry Best,
+      </div>
+    </div>
+
+    <br>
+    <div class="line1">
+      <a><i class="fa fa-user"></i></a>
+      <div class="text1">
+        Alfonso Burnett <br>
+        Anything I can help with <br>
+        Hello Otto Ashley,
+      </div>
+    </div>
+
+
+    <br>
+    <div class="line1">
+      <a><i class="fa fa-user"></i></a>
+      <div class="text1">
+        Rogan Espinoza <br>
+        Assistant Marketing Department <br>
+        Hello Kerry Best,
+      </div>
+    </div>
+
+    <br>
+    <div class="line1">
+      <a><i class="fa fa-user"></i></a>
+      <div class="text1">
+        Slerra Kerr <br>
+        Application for Transfer <br>
+        Hello Halee Lindsey,
+      </div>
+    </div>
+
+    <br>
   </div>
-</footer>
-
+</div>
